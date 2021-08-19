@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Xtreme Solution</title>
+ <meta charset="utf-8"/>
+</head>
+<body>
+  <h2>View para testes</h2>
+     <form name="frmteste" method="post" action="./usuario/existe/">
+       <label for="email">e-mail:</label>
+       <input type="email" name="email" style="width:35%">
+       <input type="submit" value="Pesquisar">(Informe seu e-mail para saber se já está cadastrado);
+     </form>
+     <hr/>
+     <a href="./Usuario/listar">ver todos</a>
+     <hr>
+     <form name="frmteste2" method="post" action="./Usuario/add/" enctype="multipart/application/x-www-form-urlencoded">
+       <label for="indicie">Cadastrar Novo Usuário</label>
+       <p>Nome:  <input type="text"  name="dados[]"  style="width:300px;"></p>
+       <p>Email: <input type="email" name="dados[]" style="width:300px;"></p>
+       <p>Senha: <input type="password"  name="dados[]" style="width:300px;"></p>
+       <p>Foto:  <input type="file"  name="dados[]"></p>
+       <p><input type="submit" value="Salvar"></p>
+     </form>
+     <br/>
+     <hr/>
+     <h2>Remover</h2>
+     <form name="frmteste3" method="post" action="./Usuario/apagar/">
+       <label for="indicie">Indicie:</label>
+       <input type="number" name="index" style="width:5%">
+       <input type="submit" value="Apagar">
+     </form>
+     <hr/>
+
+</body>
+</html>
